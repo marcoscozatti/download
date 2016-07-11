@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>teste</title>
+</head>
+
+<body>
+
+
+
+<script language="javascript">
+var LIP_LowPrecision = false; //false = pede permissao pelo navegador, Maior Precisao | true = nao pede permissao, Menor Precisao
+function LocalizaIP_done(ip_data){
+  if (!ip_data['error']) //coloque seu codigo aqui
+    alert('Localizei IP: '+ip_data['city']+'-'+ip_data['state']+'-'+ip_data['country']+' (lat:'+ip_data['latitude']+',long:'+ip_data['longitude']+')');
+}</script> 
+<script src="http://www.localizaip.com.br/api/geolocation.js.php?domain=marcoscozatti.pro.br&token=187189930"></script>
+
+
+</body>
+</html>
